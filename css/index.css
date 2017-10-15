@@ -1,4 +1,10 @@
-/* Move down content because fixed navbar that is 3.5rem tall */
+/* Move content down for fixed navbar */
 body {
-    padding-top: 3.5rem;
+    margin-top: 50px;
+}
+
+h2 {
+    /* Set Padding and margin to normalise scrollspy seek location */
+    padding-top: 60px;
+    margin-top: -60px;
 }
