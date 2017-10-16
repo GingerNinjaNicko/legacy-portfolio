@@ -8,3 +8,13 @@ h2 {
     padding-top: 60px;
     margin-top: -60px;
 }
+
+.jumbotron {
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("../imgs/jumbotron_img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+}
