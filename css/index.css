@@ -12,6 +12,7 @@ h2 {
 .jumbotron {
     height: 100vh;
     background-color: #fff;
+    /* image taken from https://picjumbo.com - no licence*/
     background-image: url("../imgs/jumbotron_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
