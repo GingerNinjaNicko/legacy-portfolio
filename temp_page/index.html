@@ -26,15 +26,21 @@
             height: 100vh;
         }
         
+        .container {
+            height: 100%;
+            max-width: 940px;
+            display: flex;
+            align-items: center;
+        }
+        
         .jumbotron {
             background-color: rgb(233, 236, 239);
             background-color: rgba(233, 236, 239, 0.6);
             border: 10px solid #28a745;
             border-style: none solid;
             position: relative;
-            top: 25%;
-            max-width: 910px;
             padding: 10px 32px;
+            
         }
     </style>
     
@@ -43,7 +49,8 @@
 
 
     <!-- Main intro image & greeting -->
-        <div class="container jumbotron">
+    <div class="container">
+        <article class="jumbotron">
             <h1 class="display-3 text-center">
                 Under construction
             </h1>
@@ -61,7 +68,8 @@
                     Visit Codepen
                 </a>
             </p>
-        </div>
+        </article>
+    </div>
 
 </body>
 </html>
