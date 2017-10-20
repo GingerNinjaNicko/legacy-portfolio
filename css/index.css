@@ -41,6 +41,9 @@ article {
 .promptDown {
     position: absolute;
     bottom: 0;
+    box-sizing: border-box;
     width:100%;
-    border: 5px solid black;
+    height: 15px;
+    background-color: rgb(233, 236, 239);
+    background-color: rgba(233, 236, 239, 0.6);
 }
