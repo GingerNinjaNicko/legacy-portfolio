@@ -5,13 +5,33 @@ body {
 
 h2 {
     /* Set Padding and margin to normalise scrollspy seek location */
-    padding-top: 60px;
-    margin-top: -60px;
+    /* *** DEACTIVATED SO STYLING WORK CAN BE DONE EASIER *** */
+    /*padding-top: 60px;
+    margin-top: -60px;*/
 }
 
 article {
     margin: 10px;
     padding: 20px;
+}
+
+input, textarea {
+    height: 50px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+form .row:last-child input {
+    margin-bottom: 0;
+}
+
+label {
+    line-height: 50px
 }
 
 .landing {
