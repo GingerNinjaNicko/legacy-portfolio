@@ -68,23 +68,13 @@
         </div>
     </div>
 
-    <!-- about section -->
-    <article class="container">
-        <div class="row vert-center">
-            
-        </div> <!-- ./row -->
-    </article>
-
     <!-- portfolio section -->
     <article class="container">
         <div class="row">
             <section class="col">
-                <h2 id="portfolio">
+                <h2 id="portfolio" class="text-center">
                     Portfolio
                 </h2>
-                <p class="text-muted">
-                    Heres a selection of my work for your perusal
-                </p>
             </section>
         </div>
         
@@ -154,28 +144,47 @@
     </article>
 
     <!-- contact section -->
-    <!-- about section -->
     <article class="container">
         <div class="row">
             <section class="col">
-                <h2 id="contact">
+                <h2 id="contact" class="text-center">
                     Contact
                 </h2>
                 <div class="row">
-                    <section class="col-6">
+                    <section class="col-md-4 text-center">
                         <p>
-                            Contact me, please, I'm desperate...
+                            If you like what you see, feel free to contact me using the contact form to the right. 
+                        </p>
+                        <p>
+                            I always try to respond within 48 hours but feel free to reach out to me via social media in the mean time.
                         </p>
                     </section>
-                    <form action="#" class="col-6">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" name="email" placeholder="XXX">
-                        <textarea name="message" placeholder="XXX"></textarea>
-                        <label for="robot">
-                            Are you a Robot?
-                        </label>
-                        <input type="text" name="robot" placeholder="XXX">
-                        <input type="submit" value="Tawk ta me!">
+                    <!-- using formspree as a quick fix to get contact form up without PHP -->
+                    <form action="https://formspree.io/info@NickoJRuddock.com" method="POST" class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="name" placeholder="Your name">
+                                <input type="text" class="form-control" name="email" placeholder="Your email">
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <textarea class="form-control" name="message" placeholder="What's on your mind?"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 text-right">
+                                <label for="robot" class="bold">
+                                    Are you a Robot?
+                                </label>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <input type="text" class="form-control" name="robot" placeholder="Type 'no'">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="submit" class="form-control btn btn-success" value="Tawk ta me!">
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </section> <!-- ./col -->
