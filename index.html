@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    <!-- Invisible top for scrollspy functionality -->
+    <div id="top"></div>
+    
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container">
             <a href="#" class="navbar-brand">
@@ -28,7 +31,7 @@
             
             <div class="collapse navbar-collapse" id="nav-collapse-items">
                 <div class="navbar-nav ml-auto">
-                    <a href="#landing" class="nav-item nav-link">
+                    <a href="#top" class="active nav-item nav-link">
                         Home
                     </a>
                     <a href="#portfolio" class="nav-item nav-link">

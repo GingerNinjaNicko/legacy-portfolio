@@ -1,7 +1,12 @@
 /* Move content down for fixed navbar */
 body {
-    margin-top: 60px;
     position: relative;
+}
+
+#top {
+    width: 100%;
+    height: 60px;
+    background-color: #343a40;
 }
 
 h2 {
