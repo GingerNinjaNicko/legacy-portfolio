@@ -39,6 +39,10 @@ textarea {
     resize: none;
 }
 
+.form-control:focus {
+    border-color: #28a745;
+}
+
 form .row:last-child input {
     margin-bottom: 0;
 }
