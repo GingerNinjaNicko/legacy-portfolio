@@ -1,6 +1,6 @@
 /* Move content down for fixed navbar */
 body {
-    margin-top: 56px;
+    margin-top: 60px;
 }
 
 h2 {
@@ -8,6 +8,13 @@ h2 {
     /* *** DEACTIVATED SO STYLING WORK CAN BE DONE EASIER *** */
     /*padding-top: 60px;
     margin-top: -60px;*/
+    
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    border-top: 5px solid #28a745;
+    border-bottom: 5px solid #28a745;
+    width: 50%;
 }
 
 article {
@@ -47,6 +54,11 @@ footer {
 .navbar-brand > h1 {
     margin: 0;
     padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .landing {
