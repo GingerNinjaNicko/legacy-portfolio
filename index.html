@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./css/index.css">
     
 </head>
-<body data-spy="scroll" data-target="#mainNav" data-offset="0">
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 
-    <nav id="mainNav top" class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <h1>
@@ -28,7 +28,7 @@
             
             <div class="collapse navbar-collapse" id="nav-collapse-items">
                 <div class="navbar-nav ml-auto">
-                    <a href="#top" class="nav-item nav-link">
+                    <a href="#landing" class="nav-item nav-link">
                         Home
                     </a>
                     <a href="#portfolio" class="nav-item nav-link">
@@ -43,7 +43,7 @@
     </nav>
     
     <!-- Main intro image & greeting -->
-    <div class="landing vert-center">
+    <div id="landing" class="vert-center">
         <div class="container">
             <article class="jumbotron row vert-center">
                 <section class="col-lg-8 col-md-7 text-center">
@@ -71,11 +71,11 @@
     </div>
 
     <!-- portfolio section -->
-    <article class="container">
+    <article id="portfolio" class="container">
         
         <div class="row">
             <section class="col">
-                <h2 id="portfolio" class="text-center">
+                <h2 class="text-center">
                     Portfolio
                 </h2>
             </section>
@@ -139,10 +139,10 @@
     </article>
 
     <!-- contact section -->
-    <article class="container">
+    <article id="contact" class="container">
         <div class="row">
             <section class="col">
-                <h2 id="contact" class="text-center">
+                <h2 class="text-center">
                     Contact
                 </h2>
                 <div class="row">
