@@ -28,13 +28,13 @@ article {
     padding: 20px;
 }
 
-input, textarea {
+.form-control, .input-group-addon {
     height: 50px;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-textarea {
+textarea.form-control {
     height: 120px;
     resize: none;
 }
