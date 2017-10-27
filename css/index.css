@@ -105,5 +105,6 @@ footer {
 
 .vert-center{
     display: flex;
+    height: 100%;
     align-items: center;
 }
