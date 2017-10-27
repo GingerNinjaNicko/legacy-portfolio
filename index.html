@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     
+    <!-- Font awesome -->
+    <script src="https://use.fontawesome.com/ab45073717.js"></script>
+    
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     
@@ -67,7 +70,7 @@
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
-                    <img src="./imgs/me.jpg" class="round img-fluid" alt="Photo of Nicko J. Ruddock">
+                    <img src="./imgs/me.jpg" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
                 </section>
             </article>
         </div>
@@ -150,25 +153,48 @@
                 </h2>
                 <div class="row">
                     <!-- description text -->
-                    <section class="col-md-6 text-center">
-                        <p>
-                            If you like what you see, feel free to contact me using the contact form below. 
-                        </p>
-                        <p>
-                            I always try to respond within 48 hours but feel free to reach out to me via social media in the mean time.
-                        </p>
+                    <section class="col-md-6 vert-center text-center">
+                        <div>
+                            <p>
+                                 Thank you for your time spent viewing my domain.
+                            </p>
+                            <p>
+                                If you like what you see, feel free to contact me using the contact form below.
+                                I always try to respond to messages within 48 hours so you know your message is in safe hands!
+                            </p>
+                            <p>
+                                <a href="https://codepen.io/GingerNinjaNicko/" target="_blank">
+                                    <i title="Visit my Codepen page" class="fa fa-codepen" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/GingerNinjaNicko" target="_blank">
+                                    <i title="Visit my Github page" class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://medium.com/@GingerNinjaNick" target="_blank">
+                                    <i title="Visit my Medium page" class="fa fa-medium" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/GingerNinjaNick" target="_blank">
+                                    <i title="Visit my Facebook page" class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                                <!--
+                                <a href="https://www.linkedin.com/in/gingerninjanicko/">
+                                    <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                                -->
+                            </p>
+                        </div>
                     </section>
                     
                     <section class="col-md-6">
-                    <!-- img source: https://pixabay.com/en/contact-visit-letters-email-mail-2794680/ -->
-                    <div class="vert-center">
-                        <img src="./imgs/contact-crop.png" class="img-fluid" alt="Photo of Nicko J. Ruddock">
-                    </div>
-                </section>
+                        <!-- img source: https://pixabay.com/en/contact-visit-letters-email-mail-2794680/ -->
+                        <div class="vert-center">
+                            <img src="./imgs/contact-crop.png" class="img-fluid" alt="Photo of Nicko J. Ruddock">
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
                     
-                    <hr class="divider">
                     <!-- using formspree as a quick fix to get contact form up without PHP -->
-                    <div class="col-12">
+                    <section class="col-12">
                         <form action="https://formspree.io/info@NickoJRuddock.com" method="POST" class="row">
                             <div class="col-md-6">
                                 <input type="text" class="form-control form-control-lg" name="name" placeholder="Your name">
@@ -176,7 +202,7 @@
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea class="form-control form-control-lg" name="message" placeholder="What's on your mind?"></textarea>
+                                <textarea class="form-control form-control-lg" name="message" placeholder="Your message"></textarea>
                             </div>
                             <div class="col-md-6 input-group input-group-lg">
                                 <label for="robot" class="input-group-addon">
@@ -189,7 +215,7 @@
                                 <input type="submit" class="form-control form-control-lg btn btn-success" value="Send message">
                             </div>
                         </form>
-                    </div>
+                    </section>
                 </div>
             </section> <!-- ./col -->
         </div> <!-- ./row -->
