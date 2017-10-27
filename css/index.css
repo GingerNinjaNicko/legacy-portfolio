@@ -20,11 +20,6 @@ a:hover {
 }
 
 h2 {
-    /* Set Padding and margin to normalise scrollspy seek location */
-    /* *** DEACTIVATED SO STYLING WORK CAN BE DONE EASIER *** */
-    /*padding-top: 60px;
-    margin-top: -60px;*/
-    
     text-align: center;
     padding: 20px;
     margin: 30px auto;
@@ -33,9 +28,10 @@ h2 {
     width: 50%;
 }
 
-article {
-    margin: 10px;
-    padding: 20px;
+article.container {
+    /* Set Padding and margin to normalise scrollspy seek location */
+    padding-top: 60px;
+    margin-top: -60px;
 }
 
 #contact i.fa {
