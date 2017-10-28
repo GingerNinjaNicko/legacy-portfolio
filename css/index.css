@@ -21,7 +21,7 @@ a:hover {
 
 h2 {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin: 30px auto;
     border-top: 5px solid #28a745;
     border-bottom: 5px solid #28a745;
@@ -116,6 +116,6 @@ footer {
     align-items: center;
 }
 
-#contact-img {
+#contact-img, .portfolio-sect:not(:last-child) {
     margin-bottom: 1rem;
 }
