@@ -38,3 +38,33 @@ $('a[href*="#"]')
     }
   }
 );
+
+/* =================== */
+/* CONTACT FORM SUBMIT */
+/* =================== */
+
+$("#form #submit").click(function(evt){
+  // prevent normal form submission
+  evt.preventDefault();
+  
+  // initialize data set
+  var data = {
+    name:   $("#form [name='name']").val(),
+    email:  $("#form [name='email']").val(),
+    msg:    $("#form [name='msg']").val(),
+    robot:  $("#form [name='robot']").val()
+  };
+  
+  //send post request
+  $.ajax({
+    method: "POST",
+    url: "./assets/php/contact.php",
+    data: data
+  })
+  .done(function(){
+    console.log("success");
+  })
+  .fail(function(){
+    console.log("failure");
+  })
+});
