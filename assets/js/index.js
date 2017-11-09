@@ -43,7 +43,7 @@ $('a[href*="#"]')
 /* CONTACT FORM SUBMIT */
 /* =================== */
 
-$("#form #submit").click(function(evt){
+$("#form [type='submit']").click(function(evt){
   // prevent normal form submission
   evt.preventDefault();
   
@@ -67,8 +67,8 @@ $("#form #submit").click(function(evt){
     dataType: "json",
     data: JSON.stringify(data)
   })
-  .done(function(){
-    alert("success");
+  .done(function(data){
+    alert(data);
   })
   .fail(function(){
     alert("failure");
