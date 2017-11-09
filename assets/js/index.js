@@ -55,16 +55,22 @@ $("#form #submit").click(function(evt){
     robot:  $("#form [name='robot']").val()
   };
   
-  //send post request
+  /* ERROR HANDLE */
+  // check all inputs filled in
+  // check appropriate email format
+  // check user not a robot
+  
+  /* SEND POST VIA AJAX*/
   $.ajax({
     method: "POST",
     url: "./assets/php/contact.php",
-    data: data
+    dataType: "json",
+    data: JSON.stringify(data)
   })
   .done(function(){
-    console.log("success");
+    alert("success");
   })
   .fail(function(){
-    console.log("failure");
-  })
+    alert("failure");
+  });
 });
