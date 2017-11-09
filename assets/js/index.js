@@ -67,9 +67,9 @@ $("#form [type='submit']").click(function(evt){
     data: data
   })
   .done(function(res){
-    console.log(res);
+    alert(res);
   })
   .fail(function(err){
-    console.log(err);
+    alert(err);
   });
 });
