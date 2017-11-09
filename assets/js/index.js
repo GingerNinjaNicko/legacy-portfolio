@@ -43,7 +43,7 @@ $('a[href*="#"]')
 /* CONTACT FORM SUBMIT */
 /* =================== */
 
-$("#form #submit").click(function(evt){
+$("#form [type='submit']").click(function(evt){
   // prevent normal form submission
   evt.preventDefault();
   
@@ -55,16 +55,21 @@ $("#form #submit").click(function(evt){
     robot:  $("#form [name='robot']").val()
   };
   
-  //send post request
+  /* ERROR HANDLING*/
+  // check for empty inputs
+  // check for valid email
+  // check for robots
+  
+  /* SEND AJAX POST REQUEST */
   $.ajax({
     method: "POST",
     url: "./assets/php/contact.php",
     data: data
   })
-  .done(function(){
-    console.log("success");
+  .done(function(res){
+    console.log(res);
   })
-  .fail(function(){
-    console.log("failure");
-  })
+  .fail(function(err){
+    console.log(err);
+  });
 });
