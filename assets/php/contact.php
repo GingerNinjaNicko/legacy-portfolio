@@ -15,11 +15,15 @@ if(isset($_POST) && !empty($_POST['name'])){
               "X-Sender: info@nickojruddock.com\r\n" .
               "X-Mailer: PHP/" . phpversion();
   // construct email body
-  $msg  = "You have been sent a new email from NickoJRuddock.com\r\n\r\n" .
-          "Name: " . $_POST['name'] . "\r\n" .
-          "Email: " . $_POST['email'] . "\r\n" .
-          "\r\n" .
-          "Message: " . $_POST['msg'];
+  $msg  = <<<MSG
+You have been sent a new email from NickoJRuddock.com
+
+Name: {$_POST['name']}
+Email: {$_POST['email']}
+
+Message: 
+{$_POST['msg']}
+MSG;
   
   // send email
   $sent = mail($toEmail, $subject, $msg, $header);
