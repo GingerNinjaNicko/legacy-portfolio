@@ -55,21 +55,39 @@ $("#form [type='submit']").click(function(evt){
     robot:  $("#form [name='robot']").val()
   };
   
+<<<<<<< HEAD
   /* ERROR HANDLING*/
   // check for empty inputs
   // check for valid email
   // check for robots
   
   /* SEND AJAX POST REQUEST */
+=======
+  /* ERROR HANDLE */
+  // check all inputs filled in
+  // check appropriate email format
+  // check user not a robot
+  
+  /* SEND POST VIA AJAX*/
+>>>>>>> fee4631c409904298fdd9c6d992f9d6c09de3385
   $.ajax({
     method: "POST",
     url: "./assets/php/contact.php",
-    data: data
+    dataType: "json",
+    data: JSON.stringify(data)
   })
+<<<<<<< HEAD
   .done(function(res){
     alert(res);
   })
   .fail(function(err){
     alert(err);
+=======
+  .done(function(data){
+    alert(data);
+  })
+  .fail(function(){
+    alert("failure");
+>>>>>>> fee4631c409904298fdd9c6d992f9d6c09de3385
   });
 });

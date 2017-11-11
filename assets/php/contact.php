@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // define success & error responses
 $errTxt = "No POST data recieved";
 $sucTxt = "Email sent successfully";
@@ -33,4 +34,9 @@ MSG;
 } else {
   // handle any errors
   echo $errTxt;
+=======
+if(isset($_POST) && !empty($_POST))
+{
+  echo $_POST;
+>>>>>>> fee4631c409904298fdd9c6d992f9d6c09de3385
 }
