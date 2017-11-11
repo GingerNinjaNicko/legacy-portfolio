@@ -52,7 +52,8 @@ $("#submit").click(function(evt){
     name:   $("#name").val(),
     email:  $("#email").val(),
     msg:    $("#msg").val(),
-    robot:  $("#robot").val()
+    // robot to upperCase for consistency in error handling
+    robot:  $("#robot").val().toUpperCase()
   };
   
   // ERROR HANDLING
@@ -67,7 +68,7 @@ $("#submit").click(function(evt){
     data: data
   })
   .done(function(res){
-    alert(res);
+    console.log(res);
   })
   .fail(function(err){
     alert(err);
