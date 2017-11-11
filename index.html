@@ -230,24 +230,24 @@
                     
                     <!-- using formspree as a quick fix to get contact form up without PHP -->
                     <section class="col-12">
-                        <form action="./assets/php/contact.php" method="POST" id="form" class="row">
+                        <form action="./assets/php/contact.php" method="POST" class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control form-control-lg" name="name" placeholder="Your name">
-                                <input type="text" class="form-control form-control-lg" name="email" placeholder="Your email">
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name">
+                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email">
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea class="form-control form-control-lg" name="msg" placeholder="Your message"></textarea>
+                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message"></textarea>
                             </div>
                             <div class="col-md-6 input-group input-group-lg">
                                 <label for="robot" class="input-group-addon">
                                     Are you a Robot?
                                 </label>
-                                <input type="text" class="form-control form-control-lg" name="robot" placeholder="Type 'no'">
+                                <input type="text" id="robot" name="robot" class="form-control form-control-lg" placeholder="Type 'no'">
                             </div>
 
                             <div class="col-md-6">
-                                <input type="submit" class="form-control  btn btn-lg btn-success" value="Send message">
+                                <input type="submit" id="submit" class="form-control  btn btn-lg btn-success" value="Send message">
                             </div>
                         </form>
                     </section>
