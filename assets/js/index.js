@@ -43,7 +43,7 @@ $('a[href*="#"]')
 /* CONTACT FORM SUBMIT */
 /* =================== */
 
-$("#form [type='submit']").click(function(evt){
+$("#submit").click(function(evt){
   // prevent normal form submission
   evt.preventDefault();
   
