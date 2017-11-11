@@ -37,7 +37,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="nav-collapse-items">
+            <div class="collapse navbar-collapse" id="nav-collapse-items" data-toggle="collapse" data-target="#nav-collapse-items">
                 <div class="navbar-nav ml-auto">
                     <a href="#top" class="nav-item nav-link">
                         Home
