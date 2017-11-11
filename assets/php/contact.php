@@ -37,7 +37,7 @@ if(isset($_POST)){
   if(empty($err)){
     // set vars for email
     $toEmail  = "Nicko J. Ruddock <info@nickojruddock.com>";
-    $subject  = "New message from " . $_POST['name'];
+    $subject  = "New message from " . $_POST['name'] . "using NickoJRuddock.com";
     $header   = "From: info@nickojruddock.com\r\n" .
                 "Return-Path: info@nickojruddock.com\r\n" .
                 "MIME-Type: 1.0\r\n" .
