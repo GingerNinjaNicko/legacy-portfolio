@@ -15,6 +15,11 @@
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/ab45073717.js"></script>
     
+    <!-- If javascript not enabled, form submits to this page so include php form logic-->
+    <noscript>
+        <?php include_once './assets/php/contact.php'; ?>
+    </noscript>
+    
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
     
@@ -228,9 +233,9 @@
                 </div>
                 <div class="row">
                     
-                    <!-- using formspree as a quick fix to get contact form up without PHP -->
+                    <!-- form submits to itself with no action tag -->
                     <section class="col-12">
-                        <form action="./assets/php/contact.php" method="POST" class="row">
+                        <form method="POST" class="row">
                             <div class="col-md-6">
                                 <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name">
                                 <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email">

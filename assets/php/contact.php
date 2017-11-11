@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-// define success & error responses
-$errTxt = "No POST data recieved";
-$sucTxt = "Email sent successfully";
 
 // start error checking
 if(isset($_POST) && !empty($_POST['name'])){
@@ -28,15 +24,22 @@ MSG;
   
   // send email
   $sent = mail($toEmail, $subject, $msg, $header);
-  // check email sent correctly
-  if($sent) echo $sucTxt;
+  // check email sent correctly & set var
+  if($sent) $resTxt = "Email sent successfully";
   
 } else {
   // handle any errors
-  echo $errTxt;
-=======
-if(isset($_POST) && !empty($_POST))
-{
-  echo $_POST;
->>>>>>> fee4631c409904298fdd9c6d992f9d6c09de3385
+  $resTxt = "No POST data recieved";
 }
+
+$err = array(
+  'email' => true,
+  'msg' => 'no email'
+);
+
+$response = array(
+  'resTxt' => $resTxt,
+  'err' => $err
+);
+
+echo json_encode($response);

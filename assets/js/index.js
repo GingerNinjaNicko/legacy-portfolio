@@ -55,12 +55,12 @@ $("#form [type='submit']").click(function(evt){
     robot:  $("#robot").val()
   };
   
-  /* ERROR HANDLING*/
+  // ERROR HANDLING
   // check for empty inputs
   // check for valid email
   // check for robots
   
-  /* SEND AJAX POST REQUEST */
+  // SEND AJAX POST REQUEST
   $.ajax({
     method: "POST",
     url: "./assets/php/contact.php",
