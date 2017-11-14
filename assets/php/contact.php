@@ -1,36 +1,38 @@
 <?php
 
 // check POST request has been sent
-if(isset($_POST)){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
   // initialise error array & default response text
   $err = array();
   $resTxt = 'Nothing happened...';
+  // ensure robot is upper case
+  $_POST['robot'] = strtoupper($_POST['robot']);
   
   // check each item in POST request for blanks
   foreach($_POST as $key => $val){
     if(empty($val)){
       // add to error array and update error text
       array_push($err, $key);
-      $resTxt = 'Complete all fields :(';
+      $resTxt = 'Complete all fields';
     }
   }
   
-  // check no errors & correct email format
-  if(empty($err) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+  // check email not empty & correct format
+  if(!empty($_POST['email']) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     // add to error array and update error text
     array_push($err, 'email');
-    $resTxt = 'Check email format :(';
+    $resTxt = 'Check email format';
   }
   
-  // check no errors & robot not 'NO'
-  if(empty($err) && $_POST['robot'] != 'NO'){
+  // check robot not empty & value not 'NO'
+  if(!empty($_POST['robot']) && $_POST['robot'] != 'NO'){
     // add to error array
     array_push($err, 'robot');
     // check for yes answers, update error text accordingly
     if($_POST['robot'] == 'YES')
-      $resTxt = 'No robots please! >:(';
+      $resTxt = 'No robots please!';
     else
-      $resTxt = 'Confirm human status :(';
+      $resTxt = 'Confirm human status';
   }
   
   // if no errors send email
