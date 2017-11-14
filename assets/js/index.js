@@ -53,7 +53,7 @@ $("#submit").click(function(evt){
     email:  $("#email").val(),
     msg:    $("#msg").val(),
     // robot to upperCase for consistency in error handling
-    robot:  $("#robot").val().toUpperCase()
+    robot:  $("#robot").val()
   };
   
   // ERROR HANDLING
