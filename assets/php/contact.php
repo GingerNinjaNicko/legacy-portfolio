@@ -17,15 +17,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
   }
   
-  // check email not empty & correct format
-  if(!empty($_POST['email']) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+  // check no err yet & correct format
+  if(empty($err) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     // add to error array and update error text
     array_push($err, 'email');
     $resTxt = 'Check email format';
   }
   
-  // check robot not empty & value not 'NO'
-  if(!empty($_POST['robot']) && $_POST['robot'] != 'NO'){
+  // check no err yet & value not 'NO'
+  if(empty($err) && $_POST['robot'] != 'NO'){
     // add to error array
     array_push($err, 'robot');
     // check for yes answers, update error text accordingly
