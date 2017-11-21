@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Nicko J. Ruddock">
-    <link rel="icon" href="./imgs/icon.ico"> 
+    <link rel="icon" href="./favicon.ico"> 
     <title>Nicko J. Ruddock - Portfolio</title>
 
     <!-- Adding Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/ab45073717.js"></script>
+    
+    <!-- If javascript not enabled, form submits to this page so include php form logic-->
+    <noscript>
+        <?php include_once './assets/php/contact.php'; ?>
+    </noscript>
     
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -73,7 +83,7 @@
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
-                    <img src="./imgs/me.jpg" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
+                    <img src="./assets/imgs/avatar.jpg" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
                 </section>
             </article>
         </div>
@@ -95,7 +105,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank">
-                        <img src="./imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" title="View code on Codepen" class="card-img-top">
+                        <img src="./assets/imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" title="View code on Codepen" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -123,7 +133,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank">
-                        <img src="./imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" title="View code on Codepen" class="card-img-top">
+                        <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" title="View code on Codepen" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -151,7 +161,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="http://NickoJRuddock.com">
-                        <img src="./imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" title="View webpage" class="card-img-top">
+                        <img src="./assets/imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" title="View webpage" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -222,32 +232,33 @@
                     <section class="col-md-6">
                         <!-- img source: https://pixabay.com/en/contact-visit-letters-email-mail-2794680/ -->
                         <div class="vert-center">
-                            <img src="./imgs/contact-crop.png" id="contact-img" class="img-fluid" alt="Flying mail image">
+                            <img src="./assets/imgs/contact-crop.png" id="contact-img" class="img-fluid" alt="Flying mail image">
                         </div>
                     </section>
                 </div>
                 <div class="row">
                     
-                    <!-- using formspree as a quick fix to get contact form up without PHP -->
+                    <!-- Form submits to itself with no action tag if JavaScript disabled -->
+                    <!-- Each input uses php to check whether field present in error array after submission & also to keep value after page reload  -->
                     <section class="col-12">
-                        <form action="https://formspree.io/info@NickoJRuddock.com" method="POST" class="row">
+                        <form method="POST" class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control form-control-lg" name="name" placeholder="Your name">
-                                <input type="text" class="form-control form-control-lg" name="email" placeholder="Your email">
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name">
+                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email">
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea class="form-control form-control-lg" name="message" placeholder="Your message"></textarea>
+                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message"></textarea>
                             </div>
                             <div class="col-md-6 input-group input-group-lg">
                                 <label for="robot" class="input-group-addon">
                                     Are you a Robot?
                                 </label>
-                                <input type="text" class="form-control form-control-lg" name="robot" placeholder="Type 'no'">
+                                <input type="text" id="robot" name="robot" class="form-control form-control-lg" placeholder="Type 'no'">
                             </div>
 
                             <div class="col-md-6">
-                                <input type="submit" class="form-control  btn btn-lg btn-success" value="Send message">
+                                <input type="submit" id="submit" class="form-control  btn btn-lg btn-success" value="Send message">
                             </div>
                         </form>
                     </section>
@@ -268,7 +279,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 
 </body>
 </html>

@@ -54,6 +54,10 @@ textarea.form-control {
     border-color: #28a745;
 }
 
+.error {
+    border-color: #dc3545;
+}
+
 form .row:last-child input {
     margin-bottom: 0;
 }
