@@ -1,12 +1,8 @@
-// Gulp config 
-var	
 	// Modules
-	gulp = require("gulp"),
+var gulp = require("gulp"),
 	newer = require("gulp-newer"),
-	imagemin = require("gul-imagemin"),
-	
-	// dev mode?
-	devBuild = (process.env.NODE_ENV !== "production"),
+	imagemin = require("gulp-imagemin"),
+	htmlclean = require("gulp-htmlclean"),
 	
 	// folders
 	folder = {
@@ -15,11 +11,13 @@ var
 	}
 ;
 
-// image processing
+// Image processing
 gulp.task("images", function(){
-	var out = folder.build + "images/";
-	return gulp.src(folder.src + "images/**/*")
+	var out = folder.build + "imgs/";
+	return gulp.src(folder.src + "assets/imgs/**/*")
 		.pipe(newer(out))
 		.pipe(imagemin({ optimizationLevel: 5 }))
 		.pipe(gulp.dest(out));
 });
+
+// PHP processing
