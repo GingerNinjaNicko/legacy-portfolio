@@ -3,6 +3,9 @@ var gulp = require("gulp"),
 	newer = require("gulp-newer"),
 	imagemin = require("gulp-imagemin"),
 	htmlmin = require('gulp-htmlmin'),
+	concat = require('gulp-concat'),
+	stripdebug = require('gulp-strip-debug'),
+	uglify = require('gulp-uglify'),
 
 	// folders
 	folder = {
@@ -30,4 +33,14 @@ gulp.task("php", ["images"], function () {
 			collapseWhitespace: true
 		}))
 		.pipe(gulp.dest(out));
+});
+
+// JS processing
+gulp.task("js", function () {
+	return gulp.src(`${folder.src}/assets/js/**/*`)
+		.pipe(concat('main.js'))
+		.pipe(stripdebug())
+		.pipe(uglify())
+		.pipe(gulp.dest(`${folder.build}/js/`))
+		.pipe(gulp.dest(`${folder.src}/assets/js/`));
 });
