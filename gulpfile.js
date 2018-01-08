@@ -2,7 +2,7 @@
 var gulp = require("gulp"),
 	newer = require("gulp-newer"),
 	imagemin = require("gulp-imagemin"),
-	htmlclean = require("gulp-htmlclean"),
+	
 	
 	// folders
 	folder = {
