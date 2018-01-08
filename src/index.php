@@ -121,7 +121,7 @@
                         </h6>
                         <hr class="divider">
                         <p class="card-text">
-                            I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive & accurate document. The entire process takes around one minute compared to over five if written from scratch!
+                            I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
                         </p>
                         <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" class="btn btn-success" role="button">
                             <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -177,7 +177,7 @@
                         </h6>
                         <hr class="divider">
                         <p class="card-text">
-                            For this page, I set myself a deadline to design & build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
+                            For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
                         </p>
                         <a href="http://NickoJRuddock.com" title="View webpage" class="btn btn-success" role="button">
                             <i class="fa fa-link" aria-hidden="true"></i>
