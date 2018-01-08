@@ -9,14 +9,14 @@ var gulp = require("gulp"),
 
 	// folders
 	folder = {
-		src: "src",
-		build: "dist"
+		src: "src/assets",
+		dist: "dist/assets",
 	};
 
 // Image processing
 gulp.task("images", function () {
-	var out = `${folder.build}/imgs/`;
-	return gulp.src(`${folder.src}/assets/imgs/**/*`)
+	var out = `${folder.dist}/imgs/`;
+	return gulp.src(`${folder.src}/imgs/**/*`)
 		.pipe(newer(out))
 		.pipe(imagemin({
 			optimizationLevel: 5
@@ -26,21 +26,20 @@ gulp.task("images", function () {
 
 // PHP processing
 gulp.task("php", ["images"], function () {
-	var out = folder.build;
-	return gulp.src(`${folder.src}/*.php`)
-		.pipe(newer(out))
+	return gulp.src("src/*.php")
+		.pipe(newer("dist"))
 		.pipe(htmlmin({
 			collapseWhitespace: true
 		}))
-		.pipe(gulp.dest(out));
+		.pipe(gulp.dest("dist"));
 });
 
 // JS processing
 gulp.task("js", function () {
-	return gulp.src(`${folder.src}/assets/js/**/*`)
+	return gulp.src(`${folder.src}/js/**/*`)
 		.pipe(concat('main.js'))
 		.pipe(stripdebug())
 		.pipe(uglify())
-		.pipe(gulp.dest(`${folder.build}/js/`))
-		.pipe(gulp.dest(`${folder.src}/assets/js/`));
+		.pipe(gulp.dest(`${folder.src}/js/`))
+		.pipe(gulp.dest(`${folder.dist}/js/`));
 });
