@@ -44,8 +44,8 @@ gulp.task("php-min", ["img-min"], function () {
 
 // JS processing
 gulp.task("js-min", function () {
-	return gulp.src(`${folder.src}/js/**/*`)
-		.pipe(concat('main.js'))
+	return gulp.src([`${folder.src}/js/**/*`, `!${folder.src}/js/**/*.min.js`])
+		.pipe(concat('main.min.js'))
 		.pipe(stripdebug())
 		.pipe(uglify())
 		.pipe(gulp.dest(`${folder.src}/js/`))
@@ -66,7 +66,7 @@ gulp.task('css-min', ['img-min'], function () {
 		cssnano
 	];
 
-	return gulp.src(`${folder.src}/css/**/*`)
+	return gulp.src(`${folder.src}/css/**/*.scss`)
 		.pipe(sass({
 			outputStyle: 'nested',
 			imagePath: 'imgs/',
