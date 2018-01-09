@@ -29,7 +29,9 @@ gulp.task("php-min", ["img-min"], function () {
 	return gulp.src("src/*.php")
 		.pipe(newer("dist"))
 		.pipe(htmlmin({
-			collapseWhitespace: true
+			collapseWhitespace: true,
+			removeComments: true,
+			minifyJS: true
 		}))
 		.pipe(gulp.dest("dist"));
 });
