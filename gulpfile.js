@@ -79,5 +79,24 @@ gulp.task('css-min', ['img-min'], function () {
 
 });
 
+// run all tasks
+gulp.task("run", ["php-min", "js-min", "css-min"])
+
+// watch for changes
+gulp.task("watch", function(){
+	// image changes
+	gulp.watch(`${folder.src}/imgs/**/*`, ["img-min"]);
+	// PHP changes
+	gulp.watch("src/*.php", ["php-min"]);
+	// JS changes
+	gulp.watch(`${folder.src}/js/**/*`, ["js-min"]);
+	// CSS changes 
+	gulp.watch(`${folder.src}/css/**/*`, ["css-min"]);
+	
+})
+
+// default task
+gulp.task("default", ["run", "watch"])
+
 // Browser-sync
 // https://fettblog.eu/php-browsersync-grunt-gulp/
