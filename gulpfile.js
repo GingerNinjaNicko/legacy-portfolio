@@ -14,7 +14,7 @@ var gulp = require("gulp"),
 	};
 
 // Image processing
-gulp.task("images", function () {
+gulp.task("img-min", function () {
 	var out = `${folder.dist}/imgs/`;
 	return gulp.src(`${folder.src}/imgs/**/*`)
 		.pipe(newer(out))
@@ -25,7 +25,7 @@ gulp.task("images", function () {
 });
 
 // PHP processing
-gulp.task("php", ["images"], function () {
+gulp.task("php-min", ["img-min"], function () {
 	return gulp.src("src/*.php")
 		.pipe(newer("dist"))
 		.pipe(htmlmin({
@@ -35,7 +35,7 @@ gulp.task("php", ["images"], function () {
 });
 
 // JS processing
-gulp.task("js", function () {
+gulp.task("js-min", function () {
 	return gulp.src(`${folder.src}/js/**/*`)
 		.pipe(concat('main.js'))
 		.pipe(stripdebug())
@@ -43,3 +43,9 @@ gulp.task("js", function () {
 		.pipe(gulp.dest(`${folder.src}/js/`))
 		.pipe(gulp.dest(`${folder.dist}/js/`));
 });
+
+// SASS processing
+
+
+// Browser-sync
+// https://fettblog.eu/php-browsersync-grunt-gulp/
