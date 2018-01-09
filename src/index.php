@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Nicko J. Ruddock">
-    <link rel="icon" href="./favicon.ico"> 
+    <link rel="icon" href="./assests/imgs/favicon.ico"> 
     <title>Nicko J. Ruddock - Portfolio</title>
 
     <!-- Adding Bootstrap CSS -->
@@ -292,7 +292,7 @@
 	</script>
     <script 
 		type="text/javascript" 
-		src="./assets/js/main.js">
+		src="./assets/js/main.min.js">
 	</script>
 
 </body>
