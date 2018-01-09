@@ -6,6 +6,12 @@ var gulp = require("gulp"),
 	concat = require('gulp-concat'),
 	stripdebug = require('gulp-strip-debug'),
 	uglify = require('gulp-uglify'),
+	sass = require('gulp-sass'),
+	postcss = require('gulp-postcss'),
+	assets = require('postcss-assets'),
+	autoprefixer = require('autoprefixer'),
+	mqpacker = require('css-mqpacker'),
+	cssnano = require('cssnano'),
 
 	// folders
 	folder = {
@@ -47,7 +53,31 @@ gulp.task("js-min", function () {
 });
 
 // SASS processing
+gulp.task('css-min', ['img-min'], function () {
 
+	var postCssOpts = [
+		assets({
+			loadPaths: ['imgs/']
+		}),
+		autoprefixer({
+			browsers: ['last 2 versions', '> 2%']
+		}),
+		mqpacker,
+		cssnano
+	];
+
+	return gulp.src(`${folder.src}/css/**/*`)
+		.pipe(sass({
+			outputStyle: 'nested',
+			imagePath: 'imgs/',
+			precision: 3,
+			errLogToConsole: true
+		}))
+		.pipe(postcss(postCssOpts))
+		.pipe(gulp.dest(`${folder.src}/css/`))
+		.pipe(gulp.dest(`${folder.dist}/css/`));
+
+});
 
 // Browser-sync
 // https://fettblog.eu/php-browsersync-grunt-gulp/
