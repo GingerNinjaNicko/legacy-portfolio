@@ -42,6 +42,14 @@ gulp.task("php-min", ["img-min"], function () {
 		.pipe(gulp.dest("dist"));
 });
 
+// copy over PHP files without processing
+// since any minification could cause issues
+// and would offer no optimisational benefit
+gulp.task("php-copy", function(){
+	return gulp.src(`${folder.src}/php/**/*`)
+		.pipe(gulp.dest(`${folder.dist}/php/`))
+})
+
 // JS processing
 gulp.task("js-min", function () {
 	return gulp.src([`${folder.src}/js/**/*`, `!${folder.src}/js/**/*.min.js`])
@@ -80,7 +88,7 @@ gulp.task('css-min', ['img-min'], function () {
 });
 
 // run all tasks
-gulp.task("run", ["php-min", "js-min", "css-min"])
+gulp.task("run", ["php-min", "php-copy", "js-min", "css-min"])
 
 // watch for changes
 gulp.task("watch", function(){
@@ -88,6 +96,7 @@ gulp.task("watch", function(){
 	gulp.watch(`${folder.src}/imgs/**/*`, ["img-min"]);
 	// PHP changes
 	gulp.watch("src/*.php", ["php-min"]);
+	gulp.watch(`${folder.src}/php/**/*`, ["php-copy"]);
 	// JS changes
 	gulp.watch(`${folder.src}/js/**/*`, ["js-min"]);
 	// CSS changes 
