@@ -38,7 +38,7 @@
     
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="#top" class="navbar-brand">
                 <h1>
                     NJR
                 </h1>
