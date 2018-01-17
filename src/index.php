@@ -81,10 +81,12 @@
                         Javascript, HTML, CSS, Git/Github
                     </p>
                     <p>
-                    <a href="#contact" class="btn btn-success btn-lg" role="button">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        Contact me
-                    </a>
+					<a href="#contact">
+						<button class="btn btn-success btn-lg">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							Contact me
+						</button>
+					</a>
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
@@ -122,22 +124,26 @@
                         <hr class="divider">
                         <p class="card-text">
                             I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
-                        </p>
-                        <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener" class="btn btn-success" role="button">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                            View App
-                        </a>
-                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="disabled btn btn-success" role="button" aria-disabled="true">
-                            <i class="fa fa-medium" aria-hidden="true"></i>
-                            Read Article
-                        </a>
+						</p>
+						<a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener">
+							<button class="btn btn-success">
+								<i class="fa fa-codepen" aria-hidden="true"></i>
+								View App
+							</button>
+						</a>
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+							<button class="disabled btn btn-success">
+								<i class="fa fa-medium" aria-hidden="true"></i>
+								Read Article
+							</button>
+						</a>
                     </div>
                 </div>
             </section>
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" aria-label="View code on Codepen">
+                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" title="View code on Codepen">
                         <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -150,22 +156,26 @@
                         <hr class="divider">
                         <p class="card-text">
                             I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
-                        </p>
-                        <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener" class="btn btn-success" role="button">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                            View App
-                        </a>
-                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="btn btn-success disabled" role="button" aria-disabled="true">
-                            <i class="fa fa-medium" aria-hidden="true"></i>
-                            Read Article
-                        </a>
+						</p>
+						<a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener">
+							<button class="btn btn-success">
+								<i class="fa fa-codepen" aria-hidden="true"></i>
+								View App
+							</button>
+						</a>
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+							<button class="disabled btn btn-success">
+								<i class="fa fa-medium" aria-hidden="true"></i>
+								Read Article
+							</button>
+						</a>
                     </div>
                 </div>
             </section>
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="http://NickoJRuddock.com" aria-label="View webpage">
+                    <a href="http://NickoJRuddock.com" title="View webpage">
                         <img src="./assets/imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -178,15 +188,19 @@
                         <hr class="divider">
                         <p class="card-text">
                             For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
-                        </p>
-                        <a href="http://NickoJRuddock.com" title="View webpage" class="btn btn-success" role="button">
-                            <i class="fa fa-link" aria-hidden="true"></i>
-                            View App
-                        </a>
-                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="disabled btn btn-success" role="button" aria-disabled="true">
-                            <i class="fa fa-medium" aria-hidden="true"></i>
-                            Read Article
-                        </a>
+						</p>
+						<a href="http://NickoJRuddock.com" title="View webpage">
+							<button class="btn btn-success">
+								<i class="fa fa-link" aria-hidden="true"></i>
+								View App
+							</button>
+						</a>
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+							<button class="disabled btn btn-success">
+								<i class="fa fa-medium" aria-hidden="true"></i>
+								Read Article
+							</button>
+						</a>
                     </div>
                 </div>
             </section>
