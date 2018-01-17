@@ -109,7 +109,7 @@
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank">
+                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener">
                         <img src="./assets/imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" title="View code on Codepen" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -123,11 +123,11 @@
                         <p class="card-text">
                             I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
                         </p>
-                        <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" class="btn btn-success" role="button">
+                        <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener" class="btn btn-success" role="button">
                             <i class="fa fa-codepen" aria-hidden="true"></i>
                             View App
                         </a>
-                         <a href="#" title="View article on Medium" target="_blank" class="disabled btn btn-success" role="button" aria-disabled="true">
+                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="disabled btn btn-success" role="button" aria-disabled="true">
                             <i class="fa fa-medium" aria-hidden="true"></i>
                             Read Article
                         </a>
@@ -137,7 +137,7 @@
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank">
+                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener">
                         <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" title="View code on Codepen" class="card-img-top">
                     </a>
                     <div class="card-body">
@@ -151,11 +151,11 @@
                         <p class="card-text">
                             I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
                         </p>
-                        <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" class="btn btn-success" role="button">
+                        <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener" class="btn btn-success" role="button">
                             <i class="fa fa-codepen" aria-hidden="true"></i>
                             View App
                         </a>
-                         <a href="#" title="View article on Medium" target="_blank" class="btn btn-success disabled" role="button" aria-disabled="true">
+                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="btn btn-success disabled" role="button" aria-disabled="true">
                             <i class="fa fa-medium" aria-hidden="true"></i>
                             Read Article
                         </a>
@@ -183,7 +183,7 @@
                             <i class="fa fa-link" aria-hidden="true"></i>
                             View App
                         </a>
-                         <a href="#" title="View article on Medium" target="_blank" class="disabled btn btn-success" role="button" aria-disabled="true">
+                         <a href="#" title="View article on Medium" target="_blank" rel="noopener" class="disabled btn btn-success" role="button" aria-disabled="true">
                             <i class="fa fa-medium" aria-hidden="true"></i>
                             Read Article
                         </a>
@@ -213,20 +213,20 @@
                                 I always try to respond to messages within 48 hours so you know your message is in safe hands!
                             </p>
                             <p>
-                                <a href="https://codepen.io/GingerNinjaNicko/" target="_blank" aria-label="Visit my Codepen page">
+                                <a href="https://codepen.io/GingerNinjaNicko/" target="_blank" rel="noopener" aria-label="Visit my Codepen page">
                                     <i title="Visit my Codepen page" class="fa fa-codepen" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://github.com/GingerNinjaNicko" target="_blank" aria-label="Visit my Github page">
+                                <a href="https://github.com/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Github page">
                                     <i title="Visit my Github page" class="fa fa-github" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://medium.com/@GingerNinjaNick" target="_blank" aria-label="Visit my Medium page">
+                                <a href="https://medium.com/@GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Medium page">
                                     <i title="Visit my Medium page" class="fa fa-medium" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://www.facebook.com/GingerNinjaNick" target="_blank" aria-label="Visit my Facebook page">
+                                <a href="https://www.facebook.com/GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Facebook page">
                                     <i title="Visit my Facebook page" class="fa fa-facebook-official" aria-hidden="true"></i>
                                 </a>
                                 <!--
-                                <a href="https://www.linkedin.com/in/gingerninjanicko/" target="_blank" aria-label="Visit my Linkedin page">
+                                <a href="https://www.linkedin.com/in/gingerninjanicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
                                     <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                                 -->
