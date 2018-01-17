@@ -248,12 +248,12 @@
                     <section class="col-12">
                         <form method="POST" class="row">
                             <div class="col-md-6">
-                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name">
-                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email">
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name">
+                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email">
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message"></textarea>
+                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message"></textarea>
                             </div>
                             <div class="col-md-6 input-group input-group-lg">
                                 <label for="robot" class="input-group-addon">
