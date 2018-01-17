@@ -109,8 +109,8 @@
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener">
-                        <img src="./assets/imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" title="View code on Codepen" class="card-img-top">
+                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener" title="View code on Codepen">
+                        <img src="./assets/imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -137,8 +137,8 @@
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener">
-                        <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" title="View code on Codepen" class="card-img-top">
+                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" aria-label="View code on Codepen">
+                        <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -165,8 +165,8 @@
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
-                    <a href="http://NickoJRuddock.com">
-                        <img src="./assets/imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" title="View webpage" class="card-img-top">
+                    <a href="http://NickoJRuddock.com" aria-label="View webpage">
+                        <img src="./assets/imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
