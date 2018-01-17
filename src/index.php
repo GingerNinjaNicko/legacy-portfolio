@@ -131,7 +131,7 @@
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
 							<button class="disabled btn btn-success">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
@@ -163,7 +163,7 @@
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
 							<button class="disabled btn btn-success">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
@@ -195,7 +195,7 @@
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true">
+						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
 							<button class="disabled btn btn-success">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
