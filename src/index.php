@@ -82,7 +82,7 @@
                     </p>
                     <p>
 					<a href="#contact">
-						<button class="btn btn-success btn-lg">
+						<button class="btn btn-success btn-lg" tabindex="-1">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 							Contact me
 						</button>
@@ -126,17 +126,16 @@
                             I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
 						</p>
 						<a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success">
+							<button class="btn btn-success" tabindex="-1">
 								<i class="fa fa-codepen" aria-hidden="true"></i>
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
-							<button class="disabled btn btn-success">
+						<!-- Insert anchor tag to article here when avialable -->
+							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
 							</button>
-						</a>
                     </div>
                 </div>
             </section>
@@ -158,17 +157,16 @@
                             I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
 						</p>
 						<a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success">
+							<button class="btn btn-success" tabindex="-1">
 								<i class="fa fa-codepen" aria-hidden="true"></i>
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
-							<button class="disabled btn btn-success">
+						<!-- Insert anchor tag to article here when avialable -->
+							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
 							</button>
-						</a>
                     </div>
                 </div>
             </section>
@@ -190,13 +188,13 @@
                             For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
 						</p>
 						<a href="http://NickoJRuddock.com" title="View webpage">
-							<button class="btn btn-success">
+							<button class="btn btn-success" tabindex="-1">
 								<i class="fa fa-link" aria-hidden="true"></i>
 								View App
 							</button>
 						</a>
-						<a href="#" title="View article on Medium" target="_blank" rel="noopener" aria-disabled="true" onclick="return false;">
-							<button class="disabled btn btn-success">
+						<!-- Insert anchor tag to article here when avialable -->
+							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
 								<i class="fa fa-medium" aria-hidden="true"></i>
 								Read Article
 							</button>
