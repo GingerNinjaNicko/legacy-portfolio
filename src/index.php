@@ -131,11 +131,6 @@
 								View App
 							</button>
 						</a>
-						<!-- Insert anchor tag to article here when avialable -->
-							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
-								<i class="fa fa-medium" aria-hidden="true"></i>
-								Read Article
-							</button>
                     </div>
                 </div>
             </section>
@@ -162,11 +157,6 @@
 								View App
 							</button>
 						</a>
-						<!-- Insert anchor tag to article here when avialable -->
-							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
-								<i class="fa fa-medium" aria-hidden="true"></i>
-								Read Article
-							</button>
                     </div>
                 </div>
             </section>
@@ -191,12 +181,6 @@
 							<button class="btn btn-success" tabindex="-1">
 								<i class="fa fa-link" aria-hidden="true"></i>
 								View App
-							</button>
-						</a>
-						<!-- Insert anchor tag to article here when avialable -->
-							<button class="disabled btn btn-success" aria-disabled="true" tabindex="-1">
-								<i class="fa fa-medium" aria-hidden="true"></i>
-								Read Article
 							</button>
 						</a>
                     </div>
